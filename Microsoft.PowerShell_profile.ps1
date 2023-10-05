@@ -13,7 +13,7 @@ oh-my-posh init pwsh --config 'C:\Users\dachu\AppData\Local\Programs\oh-my-posh\
 
 #PSReadLineOption
 Import-Module PSReadLine
-Set-PSReadlineKeyHandler -Key Tab -Function Complete
+# Set-PSReadlineKeyHandler -Key Tab -Function Complete
 Set-PSReadlineOption -PredictionViewStyle ListView
 
 #Terminal Icons
