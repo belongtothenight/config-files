@@ -8,17 +8,17 @@
 /* Location: Firefox/menu/help/More Troubleshooting Information/Profile Directory/ */
 /* hides the native tabs */
 #TabsToolbar {
-    visibility: collapse !important;
-  }
-  #titlebar {
-    visibility: collapse !important;
-  }
-  #sidebar-header {
-    visibility: collapse !important;
-  }
-  #main-window[chromehidden~="toolbar"] #nav-bar {
-    visibility: collapse !important;
-  }
-  #navigator-toolbox {
-    padding-top: 0px !important;
-  }
+  visibility: collapse !important;
+}
+#titlebar {
+  visibility: collapse !important;
+}
+#sidebar-header {
+  visibility: collapse !important;
+}
+#main-window[chromehidden~="toolbar"] #nav-bar {
+  visibility: collapse !important;
+}
+#navigator-toolbox {
+  padding-top: 0px !important;
+}
