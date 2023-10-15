@@ -1,4 +1,10 @@
 /* https://medium.com/@Aenon/firefox-hide-native-tabs-and-titlebar-f0b00bdbb88b */
+/* Steps:
+1. Install add-on: [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/)
+2. Go to: about:config, set "toolkit.legacyUserProfileCustomizations.stylesheets" to true
+3. Go to menu: Help > More Troubleshooting Information > Profile Directory, create folder "chrome" if not exist and add this file
+*/
+
 /* Location: Firefox/menu/help/More Troubleshooting Information/Profile Directory/ */
 /* hides the native tabs */
 #TabsToolbar {
