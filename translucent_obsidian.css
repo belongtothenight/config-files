@@ -1,3 +1,5 @@
+/* https://forum.obsidian.md/t/is-translucent-window-broken/44965 */
+
 .workspace-leaf,
 .workspace-tab-header-container {
   background: transparent;
