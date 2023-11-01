@@ -4,7 +4,7 @@
 
 " Usage
 " 1. Rename as "init.vim" before using.
-" 2. Copy the file to "~/.config/nvim/"
+" 2. Copy the file to "C:\Users\dachu\AppData\Local\nvim" / "$userprofile\AppData\Local\nvim"
 
 :set number
 :set relativenumber
