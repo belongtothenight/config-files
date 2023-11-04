@@ -41,6 +41,8 @@ nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
+imap jj <Esc>
+
 :set completeopt-=preview " For No Previews
 
 :colorscheme jellybeans
