@@ -4,7 +4,7 @@
 
 " Usage
 " 1. Rename as "init.vim" before using.
-" 2. Copy the file to "C:\Users\dachu\AppData\Local\nvim" / "$userprofile\AppData\Local\nvim"
+" 2. Copy the file to "/home/user/.config/nvim/"
 
 :set number
 :set relativenumber
@@ -17,31 +17,9 @@
 
 set encoding=UTF-8
 
-call plug#end()
-
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
-
-nmap <F8> :TagbarToggle<CR>
-
 imap jj <Esc>
 
 :set completeopt-=preview " For No Previews
-
-:colorscheme jellybeans
-
-let g:NERDTreeDirArrowExpandable="+"
-let g:NERDTreeDirArrowCollapsible="~"
-
-" --- Just Some Notes ---
-" :PlugClean :PlugInstall :UpdateRemotePlugins
-"
-" :CocInstall coc-python
-" :CocInstall coc-clangd
-" :CocInstall coc-snippets
-" :CocCommand snippets.edit... FOR EACH FILE TYPE
 
 " air-line
 let g:airline_powerline_fonts = 1
