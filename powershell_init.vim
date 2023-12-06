@@ -61,12 +61,13 @@ augroup my_color_scheme
   autocmd ColorScheme * highlight LineNr guibg=NONE ctermbg=NONE
 augroup END
 
-nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-f> :NERDTreeRefreshRoot<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nmap <F8> :TagbarToggle<CR>
+imap jj <Esc>
 
 :set completeopt-=preview " For No Previews
 
@@ -74,6 +75,7 @@ nmap <F8> :TagbarToggle<CR>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let NERDTreeShowHidden=1
 
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins

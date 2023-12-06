@@ -34,7 +34,7 @@ set encoding=UTF-8
 
 call plug#end()
 
-nnoremap <C-f> :NERDTreeFocus<CR>
+nnoremap <C-f> :NERDTreeRefreshRoot<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
@@ -49,6 +49,7 @@ imap jj <Esc>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let NERDTreeShowHidden=1
 
 " --- Just Some Notes ---
 " :PlugClean :PlugInstall :UpdateRemotePlugins
