@@ -37,3 +37,4 @@ function Invoke-Exa {
 }
 
 Set-Alias exa Invoke-Exa
+Set-Alias ls Invoke-Exa
