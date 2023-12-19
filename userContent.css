@@ -1,0 +1,14 @@
+/* This css files adds background image located in the same folder as this file to the new tab page
+ * Image has to be named "image-background.png"
+ * Ref: https://www.reddit.com/r/firefox/comments/l8clda/clean_new_tab/?onetap_auto=true 
+ */
+
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-image: url("image-background.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }
+}
