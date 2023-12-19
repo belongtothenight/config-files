@@ -24,3 +24,16 @@ function whereis ($command) {
 	Get-Command -Name $command -ErrorAction SilentlyContinue |
 	Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
+
+# Exa
+# To deploy: head to <https://github.com/ogham/exa#development-------->
+# 1. Clone the repo locally
+# 2. Run `cargo build`
+# 3. Run `cargo test`
+# 4. Copy executable filepath
+# 5. Paste filepath into the function below
+function Invoke-Exa {
+	Invoke-Expression "E:/GitHub/exa/target/debug/exa.exe $args"
+}
+
+Set-Alias exa Invoke-Exa
