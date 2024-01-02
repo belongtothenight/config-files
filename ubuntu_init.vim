@@ -6,14 +6,15 @@
 " 1. Rename as "init.vim" before using.
 " 2. Copy the file to "/home/user/.config/nvim/"
 
-:set number
-:set relativenumber
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
+set number
+set relativenumber
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=0
+set expandtab
+set mouse=a
 
 set encoding=UTF-8
 

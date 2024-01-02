@@ -7,18 +7,19 @@
 " 2. Copy the file to "C:\Users\xxx\AppData\Local\nvim\"
 
 "Bek Brace @ 30.11.2022
-:set number
-:set relativenumber
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
-:set shell=powershell
-:set shellcmdflag=-command
-:set shellquote=\"
-:set shellxquote=
+set number
+set relativenumber
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=0
+set expandtab
+set mouse=a
+set shell=powershell
+set shellcmdflag=-command
+set shellquote=\"
+set shellxquote=
 
 call plug#begin()
 
