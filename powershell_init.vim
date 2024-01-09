@@ -11,15 +11,19 @@ set number
 set relativenumber
 set autoindent
 set tabstop=4
-set shiftwidth=4
-set smarttab
 set softtabstop=0
 set expandtab
+set shiftwidth=4
+set smarttab
 set mouse=a
 set shell=powershell
 set shellcmdflag=-command
 set shellquote=\"
 set shellxquote=
+"set shell=pwsh
+set nocompatible
+filetype plugin on
+syntax on
 
 call plug#begin()
 
@@ -27,28 +31,30 @@ Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
-Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
+"Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+"Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/rstacruz/vim-closer' " For brackets autocompletion
+Plug 'vimwiki/vimwiki' " For VimWiki / Currently down
 
+"Plug 'nvim-lua/plenary.nvim' "For Harpoon
+"Plug 'https://github.com/ThePrimeagen/harpoon', {'branch': 'harpoon2'} "For Harpoon
 
 " Auto-completion  For Javascript
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
+"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
 
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
+"let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
 
 Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 
 " these two plugins will add highlighting and indenting to JSX and TSX files.
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'maxmellon/vim-jsx-pretty'
+"Plug 'yuezk/vim-js'
+"Plug 'HerringtonDarkholme/yats.vim'
+"Plug 'maxmellon/vim-jsx-pretty'
 
 set encoding=UTF-8
 
@@ -60,6 +66,7 @@ augroup my_color_scheme
   autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
   autocmd ColorScheme * highlight LineNr guibg=NONE ctermbg=NONE
+  autocmd ColorScheme * highlight Comment ctermfg=blue
 augroup END
 
 nnoremap <C-f> :NERDTreeRefreshRoot<CR>
@@ -68,11 +75,12 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nmap <F8> :TagbarToggle<CR>
+
 imap jj <Esc>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+":colorscheme jellybeans
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
@@ -104,3 +112,9 @@ let g:airline_symbols.linenr = ''
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
+" VimWiki
+let g:vimwiki_list = [{
+            \'syntax': 'markdown', 
+            \'ext': '.md'
+            \}]
+            "\'path': '~/vimwiki/', " Path to your wiki folder
