@@ -1,7 +1,3 @@
-# Check original source at: https://www.youtube.com/watch?v=fviSilPKIhs
-
-# Usage: Copy the file to "$PROFILE" or "C:\Users\xxx\Documents\PowerShell\"
-
 #Functions
 function whereis ($command) {
 	Get-Command -Name $command -ErrorAction SilentlyContinue |
@@ -12,7 +8,9 @@ function Invoke-Exa {
 }
 
 #Prompt
-oh-my-posh init pwsh --config 'C:\Users\dachu\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json' | Invoke-Expression
+#oh-my-posh init pwsh --config 'C:\Users\dachu\AppData\Local\Programs\oh-my-posh\themes\jandedobbeleer.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\dachu\AppData\Local\Programs\oh-my-posh\themes\jblab_2021.omp.json' | Invoke-Expression
+#oh-my-posh init pwsh --config 'C:\Users\dachu\AppData\Local\Programs\oh-my-posh\themes\sorin.omp.json' | Invoke-Expression
 
 #PSReadLineOption
 Import-Module PSReadLine
