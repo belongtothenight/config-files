@@ -32,6 +32,24 @@ augroup my_color_sheme
 	autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
 	autocmd ColorScheme * highlight LineNr guibg=NONE ctermbg=NONE
 augroup END
+"Ref: https://github.com/rafi/awesome-vim-colorschemes/tree/master?tab=readme-ov-file
+"colorscheme onedark
+colorscheme twilight256
+"colorscheme termschool
+"colorscheme sonokai
+"colorscheme rdark-terminal2
+"colorscheme pink-moon
+"colorscheme nord
+"colorscheme minimalist
+"colorscheme lucius
+"colorscheme jellybeans
+"colorscheme parsec
+"colorscheme papercolor
+"colorscheme Iceberg
+"colorscheme focuspoint
+"colorscheme Atom
+"colorscheme Archery
+"colorscheme abstract
 
 let g:vimwiki_list = [{
 			\'syntax': 'markdown',
@@ -51,6 +69,9 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+"make vim recognize non-main tex file
+let g:tex_flavor = 'latex'
 
 imap jj <Esc>
 nmap <F8> :TagbarToggle<CR>
